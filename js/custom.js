@@ -101,9 +101,9 @@ var siteIstotope = function () {
 		});
 	});
 
-	$container.isotope({
-		filter: '*'
-	});
+	// $container.isotope({
+		// filter: '*'
+	// });
 
 	$('#filters').on('click', 'a', function (e) {
 		e.preventDefault();
@@ -117,4 +117,25 @@ var siteIstotope = function () {
 }
 $(window).on('load', function () {
 	siteIstotope();
+});
+
+$("#staticform").submit(function(event) {
+	event.preventDefault();
+	var data = $("#staticform").serialize() + '&accessKey=980acce2-3d63-435c-bf47-72084486fbcf';
+
+	$.ajax({
+		url: 'https://api.staticforms.xyz/submit', // url where to submit the request
+		type: "POST", // type of action POST || GET
+		dataType: 'json', // data type
+		data: data, // post data || get data
+		success: function(result) {
+			$('#staticform').html('<p>Thank you for your enquiry, We\'ll get back to you shortly. Alternatively you can call 022 0933223</p>')
+		// you can see the result from the console
+		// tab of the developer tools
+		alert(JSON.parse(result));
+		},
+		error: function(xhr, resp, text) {
+		alert(xhr, resp, text);
+		}
+	})
 });

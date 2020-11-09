@@ -69,7 +69,7 @@
 						<h3>We Are Experienced</h3>
 						<h1>Perfect Solutions for
 							your Business</h1>
-						<button type="menu" class="btn" href="#Contact">Get Started</button>
+						<a class="btn" href="#Contact">Get Started</a>
 						<a href="#Services">View Our Services</a>
 					</div>
 				</div>
@@ -203,22 +203,23 @@
 						<div class="contact-form">
 							<h5 data-aos="fade-up" data-aos-duration="1000">Don’t Hesitate to Contact Us!</h5>
 							<p data-aos="fade-up" data-aos-duration="1000"></p>
-							<form>
+							<form id="staticform">
 								<ul class="list-unstyled">
 									<li class="row">
 										<div class="col-md-4 col-sm-12 form-inner1">
-											<input required="" type="text" class="form-control" placeholder="Your Name">
+											<input required="" type="text" name="name" class="form-control" placeholder="Your Name">
 										</div>
 										<div class="col-md-4 col-sm-12 form-inner2">
-											<input required="" type="text" class="form-control" placeholder="Your Email">
+											<input required="" type="text" name="email" class="form-control" placeholder="Your Email">
 										</div>
 										<div class="col-md-4 col-sm-12 form-inner3">
-											<input required="" type="text" class="form-control" placeholder="Your Phone No">
+											<input required="" type="text" name="phone" class="form-control" placeholder="Your Phone No">
 										</div>
+										<input type="hidden" name="replyTo" value="@">
 									</li>
 									<li class="row">
 										<div class="col-md-12 form-inner4">
-											<textarea required="" class="form-control massage" placeholder="Type Your Message" rows="8" id="comment"></textarea>
+											<textarea required="" name="message" class="form-control massage" placeholder="Type Your Message" rows="8" id="comment"></textarea>
 										</div>
 									</li>
 									<li class="row">

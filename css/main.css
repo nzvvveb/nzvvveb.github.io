@@ -68,7 +68,7 @@ figure {
 	background-color: #000000;
 	color: #ffffff;
 	cursor: pointer;
-	padding: 15px;
+	/* padding: 15px; */
 	border-radius: 4px;
 	cursor: pointer;
 	transition: all 1s;
