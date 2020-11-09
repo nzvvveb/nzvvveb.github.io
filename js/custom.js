@@ -132,7 +132,7 @@ $("#staticform").submit(function(event) {
 			$('#staticform').html('<p>Thank you for your enquiry, We\'ll get back to you shortly. Alternatively you can call 022 0933223</p>')
 		// you can see the result from the console
 		// tab of the developer tools
-		alert(JSON.parse(result));
+		// alert(JSON.parse(result));
 		},
 		error: function(xhr, resp, text) {
 		alert(xhr, resp, text);
