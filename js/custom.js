@@ -90,10 +90,10 @@ $(document).ready(function ($) {
 
 
 var siteIstotope = function () {
-	var $container = $('#portfolio-grid').isotope({
-		itemSelector: '.item',
-		isFitWidth: true
-	});
+	// var $container = $('#portfolio-grid').isotope({
+	// 	itemSelector: '.item',
+	// 	isFitWidth: true
+	// });
 
 	$(window).resize(function () {
 		$container.isotope({
